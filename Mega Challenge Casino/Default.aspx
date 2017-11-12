@@ -10,20 +10,23 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Image ID="slotImage1" runat="server" />
-            <asp:Image ID="slotImage2" runat="server" />
-            <asp:Image ID="slotImage3" runat="server" />
+            <asp:Image ID="slotImage1" runat="server" Height="238px" Width="194px" />
+            <asp:Image ID="slotImage2" runat="server" Height="238px" Width="194px" />
+            <asp:Image ID="slotImage3" runat="server" Height="234px" Width="194px" />
             <br />
             <br />
-            Your bet: <asp:TextBox ID="betTextBox" runat="server"></asp:TextBox>
+            Your bet:
+            <asp:TextBox ID="betTextBox" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="pullButton" runat="server" Text="Pull The Lever" />
+            <asp:Button ID="pullButton" runat="server" OnClick="pullButton_Click" Text="Pull The Lever" />
             <br />
             <br />
             <br />
-            Player&#39;s money:
-            <asp:Label ID="playersMoneyLabel" runat="server"></asp:Label>
+            <asp:Label ID="resultLabel" runat="server"></asp:Label>
+            <br />
+            <br />
+            Player&#39;s money: <asp:Label ID="playersMoneyLabel" runat="server"></asp:Label>
             <br />
             <br />
             <br />
